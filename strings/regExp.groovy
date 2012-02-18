@@ -22,3 +22,8 @@ println ""
 matcher.each {
 	println "${it}"
 }
+
+str = 'Groovy is groovy, really groovy'
+println str 
+result = (str =~ /groovy/).replaceAll('hip')
+println result
