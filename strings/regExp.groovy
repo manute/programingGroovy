@@ -1,4 +1,9 @@
-
+/*
+-To create a pattern from a string, use the ~ operator. 
+-To define a RegEx, use forward slashes as in /[G|g]roovy/. 
+-To determine whether there’s a match, use =~.
+-For an exact match, use ==~.
+*/
 reg = ~"hello"
 
 println reg.getClass().name
