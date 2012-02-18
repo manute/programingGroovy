@@ -18,3 +18,11 @@ println lst[5..2]
 subLst = lst[2..5] 
 println subLst.dump()
 
+//method collect -> operate  on each element in the collection and return a resulting collection
+println lst.collect { it * 2 }
+
+//methods find element
+println lst.find { it == 2 }
+println lst.find { it > 4 }
+println lst.findAll { it == 2 }
+println lst.findAll { it > 4 }
