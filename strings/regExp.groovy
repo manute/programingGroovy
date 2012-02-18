@@ -1,3 +1,4 @@
+
 reg = ~"hello"
 
 println reg.getClass().name
@@ -14,4 +15,10 @@ if(text ==~ pattern)
   println 'matches'
 else
   println 'no matches'
- 
+
+matcher = 'Groovy is groovy' =~ /(G|g)roovy/
+print "Size of matcher is ${matcher.size()} with elements :" 
+println ""
+matcher.each {
+	println "${it}"
+}
